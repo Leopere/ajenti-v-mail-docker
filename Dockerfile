@@ -1,6 +1,6 @@
 MAINTAINER chamunks@github.com
 FROM crosbymichael/python
-## SOURCE https://github.com/chamunks/ajenti-docker
+## SOURCE https://github.com/chamunks/ajenti-v-mail-docker
 
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get install -yq wget 
