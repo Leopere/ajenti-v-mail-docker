@@ -7,7 +7,7 @@ case $1 in
 		docker stop ajenti-v-mail
 		;;
 	firstrun )
-		docker run --name ajenti-v-mail -v $(pwd)/storage/:/root/ajenti/ ajenti-v-mail/latest cp /etc/ajenti/* /root/ajenti/
+		docker run --name ajenti-v-mail -v $(pwd)/storage/:/root/ajenti/ ajenti-v-mail cp /etc/ajenti/* /root/ajenti/
 		;;
 	build )
 		docker build -t ajenti-v-mail .
