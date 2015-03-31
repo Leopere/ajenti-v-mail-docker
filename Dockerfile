@@ -4,6 +4,7 @@ MAINTAINER chamunks@github.com
 ## SOURCE https://github.com/chamunks/ajenti-v-mail-docker
 
 RUN export DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -q
 RUN apt-get install -yq wget 
 RUN wget http://repo.ajenti.org/debian/key -O- | apt-key add -
 RUN echo "deb http://repo.ajenti.org/ng/debian main main ubuntu" >> /etc/apt/sources.list
