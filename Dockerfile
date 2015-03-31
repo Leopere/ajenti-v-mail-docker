@@ -1,5 +1,6 @@
-MAINTAINER chamunks@github.com
 FROM crosbymichael/python
+MAINTAINER chamunks@github.com
+
 ## SOURCE https://github.com/chamunks/ajenti-v-mail-docker
 
 RUN export DEBIAN_FRONTEND=noninteractive
