@@ -10,7 +10,7 @@ case $1 in
 		docker run --name ajenti-v-mail -v $(pwd)/storage/:/root/ajenti/ ajenti-v-mail/latest cp /etc/ajenti/* /root/ajenti/
 		;;
 	build )
-		docker build -t ajenti-v-mail/latest .
+		docker build -t ajenti-v-mail .
 		;;
 	destroy )
 		docker rm -f ajenti-v-mail
