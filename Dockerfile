@@ -9,8 +9,7 @@ RUN echo "deb http://repo.ajenti.org/ng/debian main main ubuntu" >> /etc/apt/sou
 RUN apt-get update -q
 RUN apt-get install -yq ajenti-v-mail 
 
-VOLUME ["/root/ajenti/"]
-VOLUME ["/etc/ajenti/"]
+VOLUME ["/root/ajenti/", "/etc/ajenti/"]
 
 EXPOSE 80 8000 443 143 993 110 995 25 465
 ENTRYPOINT ["ajenti-panel"]
